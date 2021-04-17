@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+*,
+body,
+html {
+  --main-color: rgb(26, 64, 122);
+  --orange: rgb(224, 111, 38);
+  --shadow: #555;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+label {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-weight: bold;
+}
+
+#movie {
+  margin-top: 40px;
+}
+
+.form-group {
+  display: grid;
+  justify-content: center;
+}
+
+input {
+  width: 500px;
+  display: block;
+  line-height: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  border: 1px solid var(--shadow);
+  transition: all 0.15 ease-out;
+}
+
+input[type="text"]:focus-within {
+  border: 1px solid var(--shadow);
+  box-shadow: 1px 1px 0.5em var(--orange);
+}
+.primary-color {
+  color: var(--orange);
+}
+
+.app-name {
+  margin: 40px 0 0 30px;
+  font-size: 2.5rem;
+  color: var(--main-color);
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  margin: 30px auto;
+  width: 500px;
+  border-radius: 0;
+  padding: 10px;
+  background: var(--orange);
+  color: white;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 4px 3px var(--shadow);
+  font-weight: bold;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+.table-movies {
+  text-align: left;
+  margin: 20px auto;
+  width: 500px;
+}
+
+thead {
+  box-shadow: 0 4px 2px -2px var(--shadow);
+}
+
+th,
+td {
+  padding: 10px 15px;
+}
+
+tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+.btn-delete {
+  margin: 5px 0 0 20px;
+  background: rgb(219, 14, 14);
+  padding: 3px 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.btn-delete:hover {
+  background: rgb(112, 0, 0);
+}
+
+.alert1 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  top: 100px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: red;
+  border-radius: 10px;
+  width: 400px;
+  height: 100px;
+  visibility: hidden;
+}
+
+.alert2 {
+  background: green;
+  height: 50px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin-top: 38px;
+}
+
+/*.search-btn {
+  transition: all 0.7s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 62%;
+  transform: translate(-50%, -50%);
+}*/
+
+.container-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.random-btn {
+  padding: 15px 20px;
+  width: 150px;
+  margin: 20px;
+}

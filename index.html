@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/9d7fa9bd06.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie Theater</title>
+  </head>
+  <body>
+    <div class="container">
+      <img class="logo" src="filmIcon.png" alt="Icon of a movie" />
+      <h1 class="app-name">
+        Movies <span class="primary-color">to</span> watch
+      </h1>
+    </div>
+    <div class="alert1">Fill all the boxes</div>
+    <div class="alert2 alert1">Movie added</div>
+    <form id="movie">
+      <div class="form-group">
+        <label for="title">Title </label>
+        <input type="text" id="title" placeholder="Enter title" />
+      </div>
+      <div class="form-group">
+        <label for="director">Director </label>
+        <input type="text" id="director" placeholder="Enter director" />
+      </div>
+      <div class="form-group">
+        <label for="genre">Genre</label>
+        <input type="text" id="genre" placeholder="Enter genre of a movie" />
+      </div>
+      <input type="submit" value="Add movie" class="submit-btn btn" />
+    </form>
+    <div class="search">
+      <input
+        type="text"
+        id="myInput"
+        onkeyup="Search()"
+        placeholder="Search for movies.."
+        title="Type in a name"
+      />
+      <a class="search-btn">
+        <i class="fa fa-search"></i>
+      </a>
+    </div>
+    <div class="container-btns">
+      <button class="random-btn btn" onclick="random()">Random Movie</button>
+      <button class="random-btn btn" onclick="showAll()">Show all</button>
+    </div>
+    <table class="table-movies" id="table-movies">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Director</th>
+          <th>Genre</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="list"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
